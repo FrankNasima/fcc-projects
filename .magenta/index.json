@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-05-18T15:49:53.491Z",
+  "files": {
+    "book-inventory/index.html": {
+      "aiPct": 0,
+      "pastePct": 100,
+      "totalLines": 50
+    },
+    "book-inventory/styles.css": {
+      "aiPct": 0,
+      "pastePct": 100,
+      "totalLines": 68
+    },
+    "playing-cards/index.html": {
+      "aiPct": 0,
+      "pastePct": 92,
+      "totalLines": 39
+    },
+    "playing-cards/styles.css": {
+      "aiPct": 0,
+      "pastePct": 95,
+      "totalLines": 39
+    },
+    "product-landing-page/index.html": {
+      "aiPct": 0,
+      "pastePct": 99,
+      "totalLines": 83
+    },
+    "product-landing-page/styles.css": {
+      "aiPct": 0,
+      "pastePct": 100,
+      "totalLines": 193
+    },
+    "technical-documentation/index.html": {
+      "aiPct": 0,
+      "pastePct": 100,
+      "totalLines": 50
+    },
+    "technical-documentation/styles.css": {
+      "aiPct": 0,
+      "pastePct": 100,
+      "totalLines": 74
+    }
+  },
+  "aggregate": {
+    "totalFiles": 8,
+    "totalLines": 596,
+    "aiPct": 0,
+    "pastePct": 99
+  }
+}

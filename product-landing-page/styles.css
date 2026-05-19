@@ -1,0 +1,197 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+background-color:#0a0a0a;
+color:#ffffff;
+font-family:'Georgia',serif;
+}
+#header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background-color:#1e1e1e;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+box-shadow:0 2px 10px rgba(0,168,255,0.3);
+z-index:1000;
+}
+
+#logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:#00a8ff;
+font-size:22px;
+font-weight:bold;
+}
+#header-img{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+#nav-bar{
+display:flex;
+gap:20px;
+}
+.nav-link{
+color:#ffffff;
+text-decoration:none;
+font-size:16px;
+}
+.nav-link:hover{
+color:#00a8ff;
+}
+main{
+margin-top:80px;
+padding:40px;
+}
+
+#features{
+display:flex;
+justify-content:space-around;
+padding:60px 0;
+margin-bottom:40px;
+gap:20px;
+}
+.feature{
+text-align:center;
+width:30%;
+padding:30px;
+background-color:#1e1e1e;
+border-radius:10px;
+border:1px solid #00a8ff;
+box-shadow:0 2px 10px rgba(0,168,255,0.3);
+}
+.feature h2{
+color:#00a8ff;
+margin-bottom:10px;
+font-size:22px;
+}
+.feature p{
+color:#ffffff;
+line-height:1.6;
+}
+#video{
+display:block;
+margin:40px auto;
+border:2px solid #00a8ff;
+border-radius:10px;
+}
+
+#pricing{
+padding:60px 0;
+text-align:center;
+margin-bottom:40px;
+}
+#pricing h2{
+color:#00a8ff;
+font-size:30px;
+margin-bottom:40px;
+}
+.pricing-container{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+.price-card{
+background-color:#1e1e1e;
+padding:30px;
+border-radius:10px;
+width:250px;
+border:1px solid #00a8ff;
+box-shadow:0 2px 10px rgba(0,168,255,0.3);
+}
+.price-card h3{
+color:#00a8ff;
+font-size:22px;
+margin-bottom:15px;
+}
+.price-card p{
+color:#ffffff;
+margin-bottom:8px;
+}
+.price-card h4{
+color:#00a8ff;
+font-size:20px;
+margin:15px 0;
+}
+.price-card button{
+background-color:#00a8ff;
+color:#ffffff;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+width:100%;
+font-size:16px;
+}
+.price-card button:hover{
+background-color:#0086cc;
+}
+
+#contact{
+padding:60px 0;
+text-align:center;
+}
+#contact h2{
+color:#00a8ff;
+margin-bottom:30px;
+font-size:30px;
+}
+#form{
+display:flex;
+justify-content:center;
+gap:10px;
+}
+#email{
+padding:10px 20px;
+width:300px;
+border-radius:5px;
+border:1px solid #00a8ff;
+background-color:#1e1e1e;
+color:#ffffff;
+font-size:16px;
+}
+#submit{
+padding:10px 20px;
+background-color:#00a8ff;
+color:#ffffff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+#submit:hover{
+background-color:#0086cc;
+}
+@media(max-width:768px){
+#header{
+flex-direction:column;
+gap:10px;
+}
+#features{
+flex-direction:column;
+align-items:center;
+}
+.feature{
+width:100%;
+margin-bottom:20px;
+}
+.pricing-container{
+flex-direction:column;
+align-items:center;
+}
+#form{
+flex-direction:column;
+align-items:center;
+}
+#email{
+width:100%;
+}
+}
