@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050510;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #05051088;
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  z-index: 100;
+  border-bottom: 1px solid #00ff9f44;
+  box-shadow: 0 0 20px #00ff9f33;
+}
+
+#navbar a {
+  color: #00ff9f;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: text-shadow 0.3s;
+}
+
+#navbar a:hover {
+  text-shadow: 0 0 10px #00ff9f, 0 0 20px #00ff9f;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#welcome-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ff9f, #ff006e, transparent);
+  animation: scanline 3s linear infinite;
+}
+
+@keyframes scanline {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+#welcome-section h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 3px;
+  animation: fadeUp 1.5s ease, pulseText 3s ease-in-out infinite;
+}
+
+#welcome-section p {
+  color: #ff006e;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  animation: fadeUp 2s ease;
+  text-shadow: 0 0 10px #ff006e;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseText {
+  0%, 100% { text-shadow: 0 0 10px #00ff9f44; }
+  50%       { text-shadow: 0 0 30px #00ff9f, 0 0 60px #00ff9f88; }
+}
+
+#project-section {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+}
+
+#project-section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #00ff9f;
+  margin-bottom: 2.5rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px #00ff9f;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-tile {
+  width: 280px;
+  background: #00ff9f08;
+  border: 1px solid #00ff9f44;
+  border-radius: 6px;
+  overflow: hidden;
+  animation: pulseGlow 2.5s ease-in-out infinite;
+  transition: transform 0.3s;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+  border-color: #00ff9f;
+}
+
+.project-tile img {
+  width: 100%;
+  display: block;
+}
+
+.project-tile a {
+  display: block;
+  padding: 1rem;
+  color: #00ff9f;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+.tile-img {
+  font-size: 4rem;
+  padding: 2rem;
+  background: #00ff9f08;
+  text-align: center;
+  border-bottom: 1px solid #00ff9f33;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 8px #00ff9f44, 0 0 16px #00ff9f22; }
+  50%       { box-shadow: 0 0 25px #00ff9f, 0 0 50px #00ff9f66; }
+}
+
+.show-all {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #00ff9f;
+  text-decoration: none;
+  border: 1px solid #00ff9f44;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  transition: background 0.3s;
+}
+
+.show-all:hover {
+  background: #00ff9f15;
+}
+
+#contact {
+  background: #02020d;
+  padding: 5rem 2rem;
+  text-align: center;
+  border-top: 1px solid #00ff9f33;
+}
+
+#contact h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: #00ff9f;
+  margin-bottom: 0.8rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px #00ff9f;
+}
+
+#contact p {
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s;
+}
+
+.github { color: #fff; }
+.github:hover { color: #aaa; }
+
+.instagram { color: #e1306c; }
+.instagram:hover { text-shadow: 0 0 10px #e1306c; }
+
+.whatsapp { color: #25d366; }
+.whatsapp:hover { text-shadow: 0 0 10px #25d366; }
+
+@media (max-width: 768px) {
+  #welcome-section h1 { font-size: 1.8rem; }
+  .project-tile { width: 90%; }
+  .social-links { gap: 1.5rem; }
+}
